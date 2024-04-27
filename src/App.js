@@ -6,6 +6,8 @@ import AboutPage from './pages/AboutPage';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.css';
 import NotFoundPage from './pages/NotFoundPage';
+import LoginPage from './pages/LoginPage';
+import CreateAccountPage from './pages/CreateAccountPage';
 
 function App() {
   return (
@@ -20,6 +22,8 @@ function App() {
             <Route path='/articles/:articleId' element={<ArticlePage/>}/>
             <Route path='/about' element={<AboutPage/>}/>
             <Route path='*' element={<NotFoundPage/>}/>
+            <Route path='/login' element={<LoginPage></LoginPage>}/>
+            <Route path='/createaccount' element={<CreateAccountPage/>}/>
 
           </Routes>
 
